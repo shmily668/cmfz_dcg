@@ -10,6 +10,8 @@ public class CmfzDcgApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CmfzDcgApplication.class, args);
+
+        System.out.println("哈哈哈!");
     }
 
 }
