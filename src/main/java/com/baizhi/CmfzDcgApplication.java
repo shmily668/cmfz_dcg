@@ -12,6 +12,7 @@ public class CmfzDcgApplication {
         SpringApplication.run(CmfzDcgApplication.class, args);
 
         System.out.println("哈哈哈!");
+        System.out.println("加油啊!");
     }
 
 }
