@@ -1,0 +1,29 @@
+server:
+  port: 5299
+  servlet:
+    context-path: /cmfz_dcg
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cmfz
+    username: root
+    password: root
+  mvc:                                          #视图解析器
+    view:
+      prefix: /
+      suffix: .jsp
+    date-format: yyyy-MM-dd
+  servlet:                                      #文件上传大小配置
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 2000MB
+  jackson:
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.baizhi.entity
+logging:
+  level:
+    com.baizhi.dao: debug
